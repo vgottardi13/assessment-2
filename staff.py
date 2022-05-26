@@ -17,9 +17,7 @@ try:
             # Add first name column for all the rows into a list
             lname.append(row[1])
             # Add last name column for all the rows into a list
-            if row[3] == "Manager":
-                manager_salaries.append(float(row[2]))
-                # Add manager salary to array
+
 finally:
     file.close()
 
