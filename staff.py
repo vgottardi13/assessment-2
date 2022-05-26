@@ -30,6 +30,10 @@ try:
 finally:
     file.close()
 
+
+print(sum/qty, 'is the average salary for Managers')
+# Return average manager salaries
+
 minimum = min(salary)
 # Return minimum value of the salary list
 index = salary.index(minimum)
