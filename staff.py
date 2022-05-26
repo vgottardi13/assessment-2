@@ -30,7 +30,6 @@ try:
 finally:
     file.close()
 
-
 print(sum/qty, 'is the average salary for Managers')
 # Return average manager salaries
 
@@ -43,4 +42,3 @@ first_name = name[index]
 last_name = lname[index]
 # lname[index] return the 13th value in the name list
 print(first_name, last_name, 'has lowest salary')
-
