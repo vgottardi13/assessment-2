@@ -4,9 +4,6 @@ file = open('employees.csv')
 salary = []
 name = []
 lname = []
-manager_salaries = []
-sum = 0
-qty = 0
 
 try:
     csv_read = csv.reader(file)
@@ -23,16 +20,8 @@ try:
             if row[3] == "Manager":
                 manager_salaries.append(float(row[2]))
                 # Add manager salary to array
-    for sal in manager_salaries:
-        sum += sal
-        qty += 1
-        # Add manager salary to total sum and increment control variable
 finally:
     file.close()
-
-
-print(sum/qty, 'is the average salary for Managers')
-# Return average manager salaries
 
 minimum = min(salary)
 # Return minimum value of the salary list
